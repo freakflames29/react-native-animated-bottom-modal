@@ -1,6 +1,6 @@
 {
   "name": "animated-bottom-modal-reactnative",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "react native animated bottom modal ",
   "main": "index.tsx",
   "scripts": {
