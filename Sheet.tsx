@@ -121,7 +121,7 @@ const Sheet: React.FC<ModalProps> = ({
                       {
                         height: height || 600,
                         width: '100%',
-                        backgroundColor: backgroundColor || '#471396',
+                        backgroundColor: backgroundColor || '#fff',
                         borderTopRightRadius: 40,
                         borderTopLeftRadius: 40,
                       },
