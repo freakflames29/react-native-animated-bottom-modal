@@ -1,5 +1,6 @@
 
-# 📦 react-native-bottom-sheet-reanimated
+# 📦 animated-bottom-modal-reactnative
+
 
 A beautiful and smooth bottom sheet component built using **React Native Reanimated v3** and **Gesture Handler**, designed for easy integration with modal-based workflows.
 
@@ -21,7 +22,7 @@ A beautiful and smooth bottom sheet component built using **React Native Reanima
 Install this package along with its required peer dependencies:
 
 ```bash
-npm install react-native-bottom-sheet-reanimated
+npm install animated-bottom-modal-reactnative
 ````
 
 ### 🔗 Peer Dependencies (must be installed in your app):
@@ -39,7 +40,7 @@ npm install react-native-reanimated react-native-gesture-handler
 ```tsx
 import React, { useState } from 'react';
 import { View, Text, Button } from 'react-native';
-import { BottomSheet } from 'react-native-bottom-sheet-reanimated';
+import { BottomSheet } from 'animated-bottom-modal-reactnative';
 
 export default function App() {
   const [visible, setVisible] = useState(false);
