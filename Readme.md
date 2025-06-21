@@ -1,8 +1,4 @@
-Here’s a clean and professional `README.md` you can use for your NPM package based on your `Sheet.tsx` code. It’s styled for maximum clarity and developer-friendliness.
 
----
-
-````markdown
 # 📦 react-native-bottom-sheet-reanimated
 
 A beautiful and smooth bottom sheet component built using **React Native Reanimated v3** and **Gesture Handler**, designed for easy integration with modal-based workflows.
@@ -83,8 +79,10 @@ export default function App() {
 
 ## 📷 Screenshot
 
-![IOS](ios.png) <!-- Optional: Replace with real image -->
-![ANDROID](android.png)
+<img src="https://raw.githubusercontent.com/freakflames29/react-native-animated-bottom-modal/refs/heads/main/android.png" alt="Android" width="350">
+<img src="https://raw.githubusercontent.com/freakflames29/react-native-animated-bottom-modal/refs/heads/main/ios.png" alt="Android" width="350">
+
+
 ---
 
 ## 📌 Notes
@@ -94,11 +92,6 @@ export default function App() {
 
 ---
 
-## 📜 License
-
-MIT
-
----
 
 ## 🤝 Contributing
 
@@ -108,11 +101,4 @@ Pull requests and feedback are welcome! If you find bugs or want features, feel 
 
 ## 👤 Author
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
-
-```
-
----
-
-Would you like me to also help generate a live demo or example app for the repo? Or include a GIF demo in the README?
-```
+Made with ❤️ by [Sourav Das](https://github.com/freakflames29)
