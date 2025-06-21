@@ -1,1 +1,1 @@
-export {default as KrishnaSheet} from "./Sheet"
+export {default as BottomModalSheet} from "./Sheet"
