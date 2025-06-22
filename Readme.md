@@ -31,7 +31,7 @@ npm install animated-bottom-modal-reactnative
 npm install react-native-reanimated react-native-gesture-handler
 ```
 
-> ⚠️ Make sure Reanimated is properly configured according to [the official guide](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/installation/).
+> ⚠️ Make sure Reanimated is properly configured according to [the official guide](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started).
 
 ---
 
