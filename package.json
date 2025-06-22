@@ -1,8 +1,16 @@
 {
   "name": "animated-bottom-modal-reactnative",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "react native animated bottom modal ",
   "main": "index.tsx",
+  "keywords":[
+    "react-native",
+    "ios",
+    "android",
+    "react-native-reanimated",
+    "modal",
+    "bottom-modal"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
