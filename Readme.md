@@ -1,6 +1,4 @@
-
 # 📦 animated-bottom-modal-reactnative
-
 
 A beautiful and smooth bottom sheet component built using **React Native Reanimated v3** and **Gesture Handler**, designed for easy integration with modal-based workflows.
 
@@ -10,10 +8,11 @@ A beautiful and smooth bottom sheet component built using **React Native Reanima
 
 - ⚡ Built with Reanimated 3
 - 🧲 Smooth spring/timing animations
-- 🪟 Uses `Modal` API — easy to integrate into any screen
-- 🎨 Customizable background color and height
+- 🪟 Modal-like overlay, easy to integrate into any screen
+- 🎨 Customizable background color, height, and border radius
 - 🧩 Supports children content
-- 🧱 Built-in close button and backdrop tap-to-close
+- 🧱 Built-in close button, drag-to-close, and backdrop tap-to-close
+- 👆 Drag handle for intuitive gesture-based closing
 
 ---
 
@@ -23,7 +22,7 @@ Install this package along with its required peer dependencies:
 
 ```bash
 npm install animated-bottom-modal-reactnative
-````
+```
 
 ### 🔗 Peer Dependencies (must be installed in your app):
 
@@ -40,7 +39,7 @@ npm install react-native-reanimated react-native-gesture-handler
 ```tsx
 import React, { useState } from 'react';
 import { View, Text, Button } from 'react-native';
-import { BottomSheet } from 'animated-bottom-modal-reactnative';
+import CleanBottomSheet from 'animated-bottom-modal-reactnative';
 
 export default function App() {
   const [visible, setVisible] = useState(false);
@@ -49,16 +48,18 @@ export default function App() {
     <View style={{ flex: 1 }}>
       <Button title="Open Bottom Sheet" onPress={() => setVisible(true)} />
 
-      <BottomSheet
+      <CleanBottomSheet
         visible={visible}
         onClose={() => setVisible(false)}
         height={500}
         backgroundColor="#fff"
+        borderRadius={30}
+        showCross={true}
       >
         <View style={{ padding: 20 }}>
           <Text style={{ fontSize: 18 }}>This is the content of the sheet</Text>
         </View>
-      </BottomSheet>
+      </CleanBottomSheet>
     </View>
   );
 }
@@ -68,13 +69,15 @@ export default function App() {
 
 ## ✨ Props
 
-| Prop              | Type              | Default     | Description                                    |
-| ----------------- | ----------------- | ----------- | ---------------------------------------------- |
-| `visible`         | `boolean`         | `false`     | Controls the visibility of the modal           |
-| `onClose`         | `() => void`      | `undefined` | Function to call when closing the modal        |
-| `height`          | `number`          | `600`       | Height of the bottom sheet                     |
-| `backgroundColor` | `string`          | `#471396`   | Background color of the sheet container        |
-| `children`        | `React.ReactNode` | `-`         | Custom content to show inside the bottom sheet |
+| Prop           | Type               | Default   | Description                                                      |
+| -------------- | ------------------ | --------- | ---------------------------------------------------------------- |
+| `visible`      | `boolean`          | `false`   | Controls the visibility of the bottom sheet                      |
+| `onClose`      | `() => void`       | `-`       | Function to call when closing the bottom sheet                   |
+| `height`       | `number`           | `600`     | Height of the bottom sheet                                       |
+| `backgroundColor` | `string`        | `#fff`    | Background color of the sheet container                          |
+| `borderRadius` | `number`           | `30`      | Border radius for the top corners of the sheet                   |
+| `children`     | `React.ReactNode`  | `-`       | Custom content to show inside the bottom sheet                   |
+| `showCross`    | `boolean`          | `true`    | Whether to show the close (cross) button                        |
 
 ---
 
@@ -83,16 +86,15 @@ export default function App() {
 <img src="https://raw.githubusercontent.com/freakflames29/react-native-animated-bottom-modal/refs/heads/main/android.png" alt="Android" width="350">
 <img src="https://raw.githubusercontent.com/freakflames29/react-native-animated-bottom-modal/refs/heads/main/ios.png" alt="Android" width="350">
 
-
 ---
 
 ## 📌 Notes
 
-* This component uses `Modal` under the hood, so it's safe to use anywhere in the component tree.
+* This component renders as an absolutely positioned overlay, so you can use it anywhere in your component tree.
 * The close button uses a static image: `close.png`. You may need to replace it with your own icon/image or customize it further.
+* Supports drag-to-close gesture and tap on backdrop to close.
 
 ---
-
 
 ## 🤝 Contributing
 
